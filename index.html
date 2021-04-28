@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Haasyl</title>
 </head>
 <body>
     <div class="header"> 
         <div class="header-logo">
-            <img class="header-logo-img" src="logo.png" alt="">
+            <img class="header-logo-img" src="./images/logo.png" alt="">
         </div>
         <div class="signin">
-            <div>
-                <h5>Already have an account?</h5>
-            </div>
-            <div>
-                <button class="signin-btn">Sign in</button>
-            </div>
+            <div><h5>Already have an account?</h5></div>
+            <div><button class="signin-btn">Sign in</button></div>
         </div>
     </div>
     <div class="split-screen">
@@ -27,40 +23,41 @@
                 <p>Each day of work adds value to your company. How much does it add to you? Register now to find out.</p>
             </section>
             <div class="mobile-img">
-                <img src="mobile.png" alt="">
+                <img src="./images/mobile.png" alt="">
             </div>
         </div>
         <div class="right">
             <form>
                 <section class="copy">
-                    <h2><strong>Get Started</strong></h2>
-                    <p>Please fill in the details.</p>
+                    <h2 class="get-started">Get started</h2>
+                    <p class="details-note">Please fill in the details.</p>
                 </section>
+                <!-- Using pattern and type attribute to validate form elements -->
                 <div class="input-container first-name">
                     <label for="fname">First Name</label>
-                    <input id="fname" name="fname" type="text">
+                    <input id="fname" name="fname" type="text" pattern="[A-Za-z]+" required>
                 </div>
                 <div class="input-container last-name">
                     <label for="lname">Last Name</label>
-                    <input id="lname" name="lname" type="text">
+                    <input id="lname" name="lname" type="text" pattern="[A-Za-z]+" required>
                 </div>
                 <div class="input-container mobile">
                     <label for="mobile">Mobile Number</label>
-                    <input id="mobile" name="mobile" type="tel">
-                    <p><span class="small">Note: An OTP will be sent to your number for verification<span/></p>
+                    <input id="mobile" name="mobile" type="tel" pattern="[6-9]\d{9}" required>
+                    <p class="mobile-note"><span class="small"><i>Note: An OTP will be sent to your number for verification</i><span/></p>
                 </div>
                 <div class="input-container salary">
                     <label for="salary">Basic Salary per Month ( in Rupees )</label>
-                    <input id="salary" name="salary" type="number">
+                    <input id="salary" name="salary" type="number" pattern="[1-9]\d*" required>
                 </div>
                 <div class="input-container salary-date">
                     <label for="sdate">Salary Date</label>
-                    <input id="sdate" name="sdate" placeholder="1st of every month" type="date">
+                    <input id="sdate" name="sdate" placeholder="1st of every month" type="date" required>
                 </div>
                 <div>
                     <button class="register-btn" type="submit">Register Now</button>
                     <section class="copy legal">
-                        <p><span class="small">By registering, you agree to haasyl's <u><a href="#">Terms of service</a></u> and <u><a href="#">Privacy Policy</a></u></span></p>
+                        <p><span class="small">By registering, you agree to haasyl's <u><a href="#">Terms of service</a></u> and <u><a href="#">Privacy Policy</a></u>.</span></p>
                     </section>
                 </div>
             </form>
