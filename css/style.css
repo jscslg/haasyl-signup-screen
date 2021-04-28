@@ -87,13 +87,14 @@ a {
 form .input-container {
     margin-bottom: 2rem;
 }
-form input {
+form input{
     display: block;
     width: 100%;
     box-sizing: border-box;
     border-radius: 4px;
     border: 1px solid var(--gray-2);
     padding: 1em;
+    background-color: white;
 }
 label {
     display: block;
