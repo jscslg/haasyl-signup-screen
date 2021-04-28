@@ -127,7 +127,7 @@ label {
     cursor: pointer;
 }
 
-/* For screen sizes >= 900px ( Responsive web design ) */
+/* For screen sizes >= 900px, change column-wise arrangement to row-wise arrangement ( Responsive web design ) */
 @media screen and (min-width: 900px) {
     .header {
         height: 10vh;
